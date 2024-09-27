@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DateNight.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DateNight.Views"
+    Shell.FlyoutBehavior="Disabled">
+    
+    <TabBar x:Name="TbBar">
+        <Tab Title="Coffee" Icon="coffee_tab">
+            <ShellContent Title="Home"  ContentTemplate="{DataTemplate local:CoffeePage}" Route="CoffeePage" />
+        </Tab>
+        <Tab Title="Dinner" Icon="dinner_tab">
+            <ShellContent Title="Home"  ContentTemplate="{DataTemplate local:DinnerPage}" Route="DinnerPage" />
+        </Tab>
+        <Tab Title="Movie" Icon="movie_tab">
+            <ShellContent Title="Home"  ContentTemplate="{DataTemplate local:MoviePage}" Route="MoviePage" />
+        </Tab>
+        <Tab Title="Total Cost" Icon="money_tab">
+            <ShellContent Title="Home"  ContentTemplate="{DataTemplate local:MoneyPage}" Route="MoneyPage" />
+        </Tab>
+    </TabBar>
+    
+    
+</Shell>
